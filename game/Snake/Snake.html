@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="CSS.css">
+	<title>Snake</title>
+</head>
+<body>
+    <div class="screen">
+        <h1>Snake</h1>
+        <a href="#" class="start" id="start">Start</a>
+    </div>
+
+    <div class="screen">
+        <div id="game">
+            
+            <div class="canvas-wrapper">
+                <canvas id="game-canvas" width="400" height="400"></canvas>
+            </div>
+            <br>
+            <div class="game-joystick">
+                <div class="game-score">
+                    <span class="score-count">0</span>
+                </div>
+                <div class="control">
+                    <div>
+                        <button class="up-btn" id="up"> ᐃ </button>
+                    </div>
+                    <div>
+                        <button class="left-btn" id="left"> ᐊ </button>
+                        <button class="right-btn" id="right"> ᐅ </button>
+                    </div>
+                    <div>
+                        <button class="down-btn" id="down"> ᐁ </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="new-game">
+                <button class="new-game-btn" id="new-game-btn"> New Game </button>
+            </div>
+        </div>
+    </div>
+    
+	<script src="JS.js"></script>
+</body>
+</html>

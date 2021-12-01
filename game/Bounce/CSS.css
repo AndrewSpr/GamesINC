@@ -1,0 +1,123 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Khula&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	color: #fff;
+	font-family: 'Khula', sans-serif;
+	height: 100vh;
+	overflow: hidden;
+	margin: 0;
+	text-align: center;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #00c288;
+}
+
+.start {
+	font-size: 1.5rem;
+}
+
+h1 {
+	line-height: 1.4;
+	font-size: 4rem;
+}
+
+.screen {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	width: 100vw;
+	transition: margin 0.5s ease-out;
+	background: #0c0d12;
+}
+
+.screen.up {
+	margin-top: -100vh;
+}
+
+.game {
+	width: 500px;
+	height: 200px;
+	border: 1px solid rgb(3, 36, 99);
+	box-shadow: -8px -8px 20px #040e1a, 10px 7px 20px #022349;
+	background-image: url(img/bg.png);
+	overflow-x: hidden;
+	text-align: center;
+	line-height: 200px;
+}
+
+#character {
+	width: 30px;
+	height: 50px;
+	background-image: url(img/player.png);
+	position: relative;
+	top: 150px;
+}
+
+.animate {
+	animation: jump 0.3s linear;
+}
+@keyframes jump {
+	0% {
+		top: 150px;
+	}
+	30% {
+		top: 100px;
+	}
+	70% {
+		top: 100px;
+	}
+	100% {
+		top: 150px;
+	}
+}
+
+#block {
+	background-image: url(img/TNT.jpg);
+	width: 20px;
+	height: 20px;
+	position: relative;
+	top: 130px;
+	left: 500px;
+	animation: block 1s infinite linear;
+}
+@keyframes block {
+	0% {
+		left: 500px;
+	}
+	100% {
+		left: -20px;
+	}
+}
+
+.new-game-btn {
+	background-color: transparent;
+	border: 2px solid #c0c0c0;
+	color: #fff;
+	cursor: pointer;
+	font-family: inherit;
+	padding: 0.3rem 1rem;
+	font-size: 1.2rem;
+	margin-top: 20px;
+}
+
+.new-game-btn:hover {
+	border: 2px solid #00c288;
+	color: #24ce9b;
+}
+
+.primary {
+	color: red;
+}
