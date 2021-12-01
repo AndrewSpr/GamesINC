@@ -32,7 +32,7 @@ const langArr = {
 	},
 
 	textPlay: {
-		en: 'Play the Google dinosaur analog, without turning offn the Internet',
+		en: 'Play the Google dinosaur analog, without turning off the Internet',
 		ru: 'Играйте в аналог гугл-динозавров, не выключая интернет',
 		ua: 'Грайте в аналог гугл-динозаврів, не вимикаючи інтернет',
 	},
