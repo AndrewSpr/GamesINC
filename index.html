@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=10">
+    <title>GamesINC</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+</head>
+
+<body>
+    <div class="content-wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__row">
+                    <div class="header__body">
+                        <picture class="mobile-icon">
+                            <img src="./img/mobile.svg" alt="">
+                        </picture>
+                        <div class="logo logo--header">GamesINC</div>
+                        <div class="header__nav">
+                            <div class="nav__row">
+                                <div class="nav__item"><a class="item__link-home" href="./index.html">Home</a></div>
+                                <div class="nav__item"><a class="item__link-games" href="./games.html">Games</a></div>
+                                <div class="nav__item"><a class="item__link-about" href="./about_us.html">About us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__language">
+                        <select class="language__toggle">
+                            <option class="language__item" value="en" selected>EN</option>
+                            <option class="language__item" value="ru">RU</option>
+                            <option class="language__item" value="ua">UA</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="mobile">
+            <div class="mobile__row">
+                <div class="mobile__header"></div>
+                <div class="mobile__nav">
+                    <div class="nav__item nav__item--mobile"><a class="item__m-link-home" href="./index.html">Home</a>
+                    </div>
+                    <div class="nav__item nav__item--mobile"><a class="item__m-link-games" href="./games.html">Games</a>
+                    </div>
+                    <div class="nav__item nav__item--mobile"><a class="item__m-link-about" href="./about_us.html">About
+                            us</a>
+                    </div>
+                </div>
+                <div class="mobile__footer">
+                    <div class="logo logo--footer">GamesINC</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="pop-up" class="modal">
+            <div class="modal__body">
+                <div class="modal__header">
+                    <div class="modal__title"></div>
+                    <div class="close">X</div>
+                </div>
+                <div class="modal__content">
+                    <form id="form" class="modal__form">
+                        <div class="input">
+                            <div class="input__title input__title--text">Your name</div>
+                            <input class="input__field" type="text">
+                        </div>
+                        <div class="input">
+                            <div class="input__title input__title--email">E-mail</div>
+                            <input class="input__field" type="email">
+                        </div>
+                        <div class="input">
+                            <div class="input__title input__title--textarea">briefly describe your game</div>
+                            <textarea class="input__field input__field--textarea" maxlength="300"></textarea>
+                        </div>
+                        <button class="button button--modal" type="submit">Send </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="container clearfix">
+            <main class="content">
+                <div class="container">
+                    <div class="content__row">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="slide__body">
+                                        <div class="slide__text slide__text--train">Train your AIM with us and reach
+                                            heights</div>
+                                    </div>
+                                    <picture class="slide__image">
+                                        <img class="slide__img" src="./img/aim.webp" alt="first-slide">
+                                    </picture>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slide__body">
+                                        <div class="slide__text slide__text--play">Play the Google dinosaur analog,
+                                            without turning off
+                                            the
+                                            Internet</div>
+                                    </div>
+                                    <picture class="slide__image">
+                                        <img class="slide__img" src="./img/cube.webp" alt="second-slide">
+                                    </picture>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slide__body">
+                                        <div class="slide__text slide__text--remember">Remember your childhood playing
+                                            the popular Snake-game
+                                        </div>
+                                    </div>
+                                    <picture class="slide__image">
+                                        <img class="slide__img" src="./img/snake.webp" alt="third-slide">
+                                    </picture>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slide__body">
+                                        <div class="slide__text slide__text--enjoy">Enjoy every
+                                            moment with our
+                                            games</div>
+                                        <a class="button button--slide_lang" href="#"></a>
+                                    </div>
+                                    <picture class="slide__image">
+                                        <img class="slide__img slide__img--last" src="./img/like-pipboy.webp"
+                                            alt="last-slide">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+                        <div class="add-game">
+                            <div class="container">
+                                <div class="add-game__row">
+                                    <div class="add-game__title add-game__title--lang">
+                                        Are you a developer? Do you want to add your game to our website? Everything is
+                                        very simple!
+                                    </div>
+                                    <div class="add-game__sub-title add-game__sub-title--lang">All you need to do is
+                                        fill out a small form so that
+                                        we can carry out quality control of your game. We guarantee you fast
+                                        and high-quality testing</div>
+                                    <picture class="add-game__arrow">
+                                        <img class="arrow__img" src="./img/arrow.webp" alt="arrow">
+                                    </picture>
+                                    <div id="pop-up__btn" class="button button--add-game">Send a request</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news">
+                            <div class="container container--news">
+                                <div class="news__row">
+                                    <div class="news__header">
+                                        <div class="news__title">Latest news</div>
+                                    </div>
+                                    <div class="news__blog">
+                                        <div class="blog__row">
+                                            <div class="blog__item">
+                                                <a href="#">
+                                                    <picture class="blog__preview">
+                                                        <img class="blog__preview-img" src="./img/first_blog.webp"
+                                                            alt="last_new">
+                                                    </picture>
+                                                </a>
+                                                <div class="blog__title blog__title--site">We've updated our
+                                                    website! Now it is much more
+                                                    comfortable and beautiful. Enjoy your new design with us. And also
+                                                    we
+                                                    added new ...</div>
+                                            </div>
+                                            <div class="blog__item">
+                                                <a href="#">
+                                                    <picture class="blog__preview">
+                                                        <img class="blog__preview-img" src="./img/second_blog.webp"
+                                                            alt="second_new">
+                                                    </picture>
+                                                </a>
+                                                <div class="blog__title blog__title--snake">We've finished
+                                                    developing our third game - the
+                                                    snake! Now you can finally remember your childhood and try your
+                                                    skills
+                                                    years later ...</div>
+                                            </div>
+                                        </div>
+                                        <div class="blog__row">
+                                            <div class="blog__item">
+                                                <a href="#">
+                                                    <picture class="blog__preview">
+                                                        <img class="blog__preview-img" src="./img/third_blog.webp"
+                                                            alt="third_new">
+                                                    </picture>
+                                                </a>
+                                                <div class="blog__title blog__title--bounce">We are pleased to inform
+                                                    you that we have
+                                                    completed the development of the second game in a row. We have been
+                                                    working
+                                                    for a long time and we hope that you will appreciate it. The game is
+                                                    called ...</div>
+                                            </div>
+                                            <div class="blog__item">
+                                                <a href="#">
+                                                    <picture class="blog__preview">
+                                                        <img class="blog__preview-img" src="./img/fourth_blog.webp"
+                                                            alt="fourth_new">
+                                                    </picture>
+                                                </a>
+                                                <div class="blog__title blog__title--aim">Good day, readers. We are
+                                                    glad to welcome you
+                                                    to our website. The subject of this site is games developed by our
+                                                    company
+                                                    ...</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="news__footer"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__row">
+                    <div class="info-col">
+                        <div class="info-col__row">
+                            <div class="info-col__title info-col__title--media">Social media</div>
+                            <div class="info-col__body">
+                                <div class="info-col__item">
+                                    <a class="info-col__link" href="#">
+                                        <svg class="media__icon" opacity="0.5">
+                                            <use xlink:href="./spritemap.svg#facebook"></use>
+                                        </svg>
+                                        <div class="item__title">Facebook</div>
+                                    </a>
+                                </div>
+                                <div class="info-col__item">
+                                    <a class="info-col__link" href="#">
+                                        <svg class="media__icon" opacity="0.5">
+                                            <use xlink:href="./spritemap.svg#instagram"></use>
+                                        </svg>
+                                        <div class="item__title">Instagram</div>
+                                    </a>
+                                </div>
+                                <div class="info-col__item">
+                                    <a class="info-col__link" href="#">
+                                        <svg class="media__icon" opacity="0.5">
+                                            <use xlink:href="./spritemap.svg#twitter"></use>
+                                        </svg>
+                                        <div class="item__title">Twitter</div>
+                                    </a>
+                                </div>
+                                <div class="info-col__item">
+                                    <a class="info-col__link" href="#">
+                                        <svg class="media__icon" opacity="0.5">
+                                            <use xlink:href="./spritemap.svg#youtube"></use>
+                                        </svg>
+                                        <div class="item__title">Youtube</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-col info-col--about">
+                        <div class="info-col__row info-col__row--about">
+                            <div class="logo logo--footer">GamesINC</div>
+                            <div class="logo__circle">G</div>
+                            <div class="info-col__body info-col__body--about">
+                                <div class="info-col__item"><a class="info-col__about-link about-link--terms"
+                                        href="#">Terms
+                                        of use of the
+                                        site</a></div>
+                                <div class="info-col__item"><a class="info-col__about-link about-link--protection"
+                                        href="#">Protection of
+                                        personal information</a></div>
+                                <div class="info-col__item"><a class="info-col__about-link about-link--map"
+                                        href="#">Site
+                                        map</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-col info-col--contact">
+                        <div class="info-col__row">
+                            <div class="info-col__title info-col__title--contact">Contact us</div>
+                            <div class="info-col__body info-col__body--contact">
+                                <div class="info-col__item">
+                                    <span class="item__title item-title--size">E-mail:</span> <a class="item__contact"
+                                        href="mailto:gamesinc@support.mail.ua">gamesinc@support.mail.ua</a>
+                                </div>
+                                <div class="info-col__item">
+                                    <span class="item__title item-title--size">E-mail:</span> <a class="item__contact"
+                                        href="mailto:gamesinc@mail.ru">gamesinc@mail.ru</a>
+                                </div>
+                                <div class="info-col__item">
+                                    <span class="item__title item-title--size">E-mail:</span> <a class="item__contact"
+                                        href="mailto:gamesinc.support@gmail.com">gamesinc.support@gmail.com</a>
+                                </div>
+                                <div class="info-col__item info-col__item--number">
+                                    <span class="item__title item-title--size">Info-service:</span> <a
+                                        class="item__contact item__contact--number"
+                                        href="tel:xxxx-xxxx-xxx">XXXX-XXXX-XXX</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src='./script/swiper.js'></script>
+<script src='./script/slider.js'></script>
+<script src='./script/pop-up.js'></script>
+<script src='./script/lang_main.js'></script>
+<script src='./script/burger.js'></script>
+
+</html>
